@@ -107,8 +107,8 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="group">
-                  <Link to="/chat">
-                    Start Finding Routes
+                  <Link to="/auth">
+                    Get Started Free
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
@@ -293,8 +293,8 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="group">
-                <Link to="/chat">
-                  Try AI Assistant Now
+                <Link to="/auth">
+                  Start Your Journey Today
                   <MessageCircle className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                 </Link>
               </Button>

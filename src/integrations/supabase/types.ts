@@ -14,7 +14,165 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      chat_history: {
+        Row: {
+          created_at: string
+          id: string
+          message: string
+          message_type: string | null
+          response: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          message: string
+          message_type?: string | null
+          response?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          message?: string
+          message_type?: string | null
+          response?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      feedback: {
+        Row: {
+          comments: string | null
+          created_at: string
+          experience_type: string
+          id: string
+          location: string
+          rating: number | null
+          transport_type: string
+          user_id: string
+        }
+        Insert: {
+          comments?: string | null
+          created_at?: string
+          experience_type: string
+          id?: string
+          location: string
+          rating?: number | null
+          transport_type: string
+          user_id: string
+        }
+        Update: {
+          comments?: string | null
+          created_at?: string
+          experience_type?: string
+          id?: string
+          location?: string
+          rating?: number | null
+          transport_type?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      frequent_destinations: {
+        Row: {
+          address: string
+          created_at: string
+          destination_name: string
+          id: string
+          last_visited: string | null
+          user_id: string
+          visit_count: number | null
+        }
+        Insert: {
+          address: string
+          created_at?: string
+          destination_name: string
+          id?: string
+          last_visited?: string | null
+          user_id: string
+          visit_count?: number | null
+        }
+        Update: {
+          address?: string
+          created_at?: string
+          destination_name?: string
+          id?: string
+          last_visited?: string | null
+          user_id?: string
+          visit_count?: number | null
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          accessibility_needs: string[] | null
+          avatar_url: string | null
+          created_at: string
+          email: string | null
+          full_name: string | null
+          id: string
+          preferred_transport: string[] | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          accessibility_needs?: string[] | null
+          avatar_url?: string | null
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          preferred_transport?: string[] | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          accessibility_needs?: string[] | null
+          avatar_url?: string | null
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          preferred_transport?: string[] | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      saved_routes: {
+        Row: {
+          accessibility_features: string[] | null
+          created_at: string
+          end_location: string
+          id: string
+          route_data: Json | null
+          route_name: string
+          start_location: string
+          user_id: string
+        }
+        Insert: {
+          accessibility_features?: string[] | null
+          created_at?: string
+          end_location: string
+          id?: string
+          route_data?: Json | null
+          route_name: string
+          start_location: string
+          user_id: string
+        }
+        Update: {
+          accessibility_features?: string[] | null
+          created_at?: string
+          end_location?: string
+          id?: string
+          route_data?: Json | null
+          route_name?: string
+          start_location?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

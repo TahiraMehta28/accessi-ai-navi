@@ -1,71 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* AI Accessible Transport Finder Design System
-Light bluish-pinkish gradient theme with accessibility focus
-All colors MUST be HSL.
-*/
+/* Professional AI Accessible Transport Finder Design System */
 
 @layer base {
   :root {
-    /* Base colors - soft, accessible palette */
-    --background: 215 100% 98%;
-    --foreground: 215 25% 15%;
+    /* Professional neutral base */
+    --background: 0 0% 100%;
+    --foreground: 215 28% 17%;
 
-    /* Card system with subtle elevation */
-    --card: 210 100% 99%;
-    --card-foreground: 215 25% 15%;
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
 
     /* Interactive overlays */
-    --popover: 210 100% 99%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
 
-    /* Primary - accessible blue */
-    --primary: 210 100% 56%;
-    --primary-foreground: 210 100% 98%;
-    --primary-light: 210 100% 88%;
-    --primary-soft: 210 100% 95%;
+    /* Primary - professional blue */
+    --primary: 215 85% 55%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 215 85% 65%;
+    --primary-soft: 215 85% 45%;
 
-    /* Secondary - soft pink accent */
-    --secondary: 330 60% 90%;
-    --secondary-foreground: 330 30% 25%;
-    --secondary-vibrant: 330 80% 75%;
+    /* Secondary - neutral gray */
+    --secondary: 215 14% 94%;
+    --secondary-foreground: 215 28% 17%;
+    --secondary-vibrant: 215 25% 85%;
 
-    /* Muted tones for subtle elements */
-    --muted: 215 20% 96%;
-    --muted-foreground: 215 15% 45%;
+    /* Muted tones */
+    --muted: 215 14% 94%;
+    --muted-foreground: 215 14% 45%;
 
-    /* Accent - pink emphasis */
-    --accent: 330 80% 85%;
-    --accent-foreground: 330 30% 20%;
+    /* Accent - professional blue variant */
+    --accent: 215 85% 60%;
+    --accent-foreground: 0 0% 98%;
 
     /* Status colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --success: 142 76% 36%;
-    --success-foreground: 142 76% 96%;
+    --success-foreground: 0 0% 98%;
 
     /* Form elements */
-    --border: 215 25% 88%;
-    --input: 215 25% 92%;
-    --ring: 210 100% 56%;
+    --border: 215 14% 89%;
+    --input: 215 14% 89%;
+    --ring: 215 85% 55%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210, 100%, 75%), hsl(330, 80%, 80%));
-    --gradient-soft: linear-gradient(135deg, hsl(215, 100%, 97%), hsl(330, 60%, 95%));
-    --gradient-hero: linear-gradient(135deg, hsl(210, 100%, 85%), hsl(330, 70%, 85%));
+    /* Professional gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215, 85%, 55%), hsl(215, 85%, 45%));
+    --gradient-soft: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(215, 14%, 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(215, 85%, 55%) 0%, hsl(215, 85%, 45%) 100%);
 
-    /* Shadows with brand colors */
-    --shadow-sm: 0 2px 8px hsl(210, 40%, 80%);
-    --shadow-md: 0 8px 24px hsl(210, 30%, 85%);
-    --shadow-lg: 0 16px 48px hsl(210, 20%, 88%);
-    --shadow-glow: 0 0 32px hsl(330, 60%, 85%);
+    /* Professional shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-glow: 0 0 20px rgb(59 130 246 / 0.15);
 
-    /* Border radius for accessibility */
-    --radius: 1rem;
-    --radius-sm: 0.75rem;
-    --radius-lg: 1.5rem;
+    /* Border radius */
+    --radius: 0.5rem;
+    --radius-sm: 0.25rem;
+    --radius-lg: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -85,50 +83,50 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark theme with consistent blue-pink palette */
-    --background: 215 30% 8%;
-    --foreground: 215 20% 92%;
+    /* Professional dark theme */
+    --background: 215 28% 8%;
+    --foreground: 213 31% 91%;
 
-    --card: 215 25% 12%;
-    --card-foreground: 215 20% 92%;
+    --card: 215 28% 10%;
+    --card-foreground: 213 31% 91%;
 
-    --popover: 215 25% 12%;
-    --popover-foreground: 215 20% 92%;
+    --popover: 215 28% 10%;
+    --popover-foreground: 213 31% 91%;
 
-    --primary: 210 100% 70%;
-    --primary-foreground: 215 30% 8%;
-    --primary-light: 210 80% 45%;
-    --primary-soft: 210 60% 25%;
+    --primary: 215 85% 60%;
+    --primary-foreground: 215 28% 8%;
+    --primary-light: 215 85% 70%;
+    --primary-soft: 215 85% 50%;
 
-    --secondary: 330 40% 25%;
-    --secondary-foreground: 330 60% 90%;
-    --secondary-vibrant: 330 60% 55%;
+    --secondary: 215 28% 16%;
+    --secondary-foreground: 213 31% 91%;
+    --secondary-vibrant: 215 28% 20%;
 
-    --muted: 215 20% 18%;
-    --muted-foreground: 215 10% 65%;
+    --muted: 215 28% 16%;
+    --muted-foreground: 215 14% 65%;
 
-    --accent: 330 60% 35%;
-    --accent-foreground: 330 60% 95%;
+    --accent: 215 85% 65%;
+    --accent-foreground: 215 28% 8%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --success: 142 70% 45%;
-    --success-foreground: 142 70% 95%;
+    --destructive-foreground: 213 31% 91%;
+    --success: 142 76% 36%;
+    --success-foreground: 213 31% 91%;
 
-    --border: 215 20% 20%;
-    --input: 215 20% 18%;
-    --ring: 210 100% 70%;
+    --border: 215 28% 16%;
+    --input: 215 28% 16%;
+    --ring: 215 85% 60%;
 
-    /* Dark gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210, 80%, 35%), hsl(330, 60%, 40%));
-    --gradient-soft: linear-gradient(135deg, hsl(215, 25%, 15%), hsl(330, 30%, 18%));
-    --gradient-hero: linear-gradient(135deg, hsl(210, 70%, 25%), hsl(330, 50%, 30%));
+    /* Professional dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215, 85%, 60%), hsl(215, 85%, 50%));
+    --gradient-soft: linear-gradient(180deg, hsl(215, 28%, 8%), hsl(215, 28%, 10%));
+    --gradient-hero: linear-gradient(135deg, hsl(215, 85%, 60%) 0%, hsl(215, 85%, 50%) 100%);
 
-    /* Dark shadows */
-    --shadow-sm: 0 2px 8px hsl(215, 50%, 3%);
-    --shadow-md: 0 8px 24px hsl(215, 60%, 2%);
-    --shadow-lg: 0 16px 48px hsl(215, 70%, 1%);
-    --shadow-glow: 0 0 32px hsl(330, 40%, 20%);
+    /* Professional dark shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+    --shadow-glow: 0 0 20px rgb(59 130 246 / 0.2);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -146,8 +144,9 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-feature-settings: "kern" 1, "liga" 1;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   /* Accessibility improvements */
